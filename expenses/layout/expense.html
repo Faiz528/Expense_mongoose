@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Expense Tracker</h1> 
+    <form class="form-inline" id="extra" >
+        <div class="form-group">
+          <label for="inputdefault">Expense-Amount
+          <input type="number" class="form-control" id="inputdefault-e" name="expense">
+        </div>
+        <div class="form-group">
+          <label for="inputdefault">Purpose</label>
+          <input type="text" class="form-control" id="inputdefault-p" name="purpose">
+        </div>
+        <div class="form-group">
+          <label for="category"  >Category</label>
+          <select class="form-control" id="category" name="category">
+            <option value="Fuel">Fuel</option>
+            <option value="Food">Food</option>
+            <option value="Education">Education</option>
+            <option value="Rent">Rent</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-default" id="Add">Add Expense</button>
+       
+      </form>
+      
+      <button  class="btn btn-default" id="buy">Buy Membership</button>
+      <button  class="btn btn-default" id="leader" >Leaderboard</button>
+      <!--<button  class="btn btn-default" id="update">Update</button><br>-->
+      <ul id ="load"></ul>
+      <h2 id ="message"></h2>
+      <h1>Expenses</h1>
+     <!-- <button  class="btn btn-default" id="daily">Daily</button>
+      <button  class="btn btn-default" id="weekly">Weekly</button>
+      <button  class="btn btn-default" id="monthly">Monthly</button>-->
+      <button  class="btn btn-default" id="download">Download File</button>
+     <!-- <button  class="btn btn-default" id="downloadfile">Download List</button>-->
+      <div class="">
+      <label for="rows"  >Rows per page</label>
+          <select class="" id="rows" name="rows">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+
+      <ul id="userList"></ul>
+      <button  class="btn btn-default" id="next">Next</button>
+      <button  class="btn btn-default" id="previous">Previous</button>
+    <div id="pagination"></div>
+       <h2 id="topper"></h2>
+      <ul id ="leaders"></ul>
+</body>
+<script src="http://checkout.razorpay.com/v1/checkout.js"></script>
+<script  src="../frontend/expense.js"></script>
+<script   src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    
+</script>
+</html>

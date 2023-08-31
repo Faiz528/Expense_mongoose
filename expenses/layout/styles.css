@@ -1,0 +1,12 @@
+body{
+    max-width: max-content;
+margin: auto;
+}
+h1{
+    
+    margin-left: 100px;
+    margin-top: 70px;
+}
+input[type=button]{
+    margin-left: 10px
+}

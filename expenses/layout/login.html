@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="align">
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" id="logins"  method="post">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder=" Email" id="email">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Password" id="password">
+                    </div>
+                    <button class="button login__submit">
+                        <span class="button__text">Log In </span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                    <h3>New User <a href="signup.html">Sign Up</a></h3>			
+                </form>
+                  
+                  <div id="error"></div>
+                <div class="social-login">
+                    <span><a href="password.html">Forgot password</a></span>
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fab fa-instagram"></a>
+                        <a href="#" class="social-login__icon fab fa-facebook"></a>
+                        <a href="#" class="social-login__icon fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+    <script type="module" src="../frontend/login.js"></script>
+    <script  crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
